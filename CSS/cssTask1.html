@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table & Shapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: #99cbd8;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 2px solid #5599aa;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+        }
+        .shape-container {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .shape {
+            width: 80px;
+            height: 50px;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+        .oval {
+            width: 80px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Manvendra</td>
+            <td>Rai</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Nikhil</td>
+            <td>kumar</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>prachi</td>
+            <td>rai</td>
+            <td>19</td>
+        </tr>
+    </table>
+
+    <div class="shape-container">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="oval shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+</body>
+</html>
