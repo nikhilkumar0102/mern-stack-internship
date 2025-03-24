@@ -8,29 +8,9 @@
 <body>
 
     <h2>Reverse a Number</h2>
-    <p>Enter a number:</p>
-    <input type="number" id="number">
-    <button onclick="reverseAndDisplay()">Reverse</button>
+    <input type="number" id="num">
+    <button onclick="document.getElementById('output').innerText = 'Reversed: ' + [...String(document.getElementById('num').value)].reverse().join('')">Reverse</button>
     <p id="output"></p>
-
-    <script>
-        function reverseNumber(num) {
-            return parseInt(num.toString().split("").reverse().join(""), 10);
-        }
-
-        function reverseAndDisplay() {
-            let num = document.getElementById("number").value;
-            let output = document.getElementById("output");
-
-            if (num === "") {
-                output.innerHTML = "Please enter a number!";
-                return;
-            }
-
-            let reversed = reverseNumber(num);
-            output.innerHTML = `Reversed Number: ${reversed}`;
-        }
-    </script>
 
 </body>
 </html>
